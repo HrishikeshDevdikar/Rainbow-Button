@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151b29;
+}
+
+button{
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+button:hover {
+    border-color: #f1ff5c;
+    color: black;
+    box-shadow: 0 0.5em 0.5em -0.2em #f1ff5c;
+    transform: translateY(-0.24em);
+    cursor: pointer;
+    border-radius: 0.5em;   
+    background-image:linear-gradient(
+        to right, 
+        #E7484F,
+        #E7484F 16.65%,
+        #F68B1D 16.65%,
+        #F68B1D 33.3%,
+        #FCED00 33.3%,
+        #FCED00 49.95%,
+        #009E4F 49.95%,
+        #009E4F 66.6%,
+        #00AAC3 66.6%,
+        #00AAC3 83.25%,
+        #732982 83.25%,
+        #732982 100%,
+        #E7484F 100%
+      );
+    animation:slidebg 4s linear infinite;
+}
